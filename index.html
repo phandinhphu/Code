@@ -6,6 +6,7 @@
     <title>BAND</title>
     <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.8B9h1_lQ6ukX5bX_aanSlAHaHa?rs=1&pid=ImgDetMain" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -34,6 +35,10 @@
             <!-- Begin: Search -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div class="mobile-menu-btn js-menu-btn">
+                <i class="mobile-menu-icon ti-menu"></i>
             </div>
             <!-- End: Search -->
         </div>
@@ -238,5 +243,28 @@
         })
     </script>
 
+    <script>
+        var header = document.getElementById('header')
+        var headerHeight = header.clientHeight;
+        const mobileMenu = document.querySelector('.js-menu-btn')
+
+        // Dong mo mobile menu
+        mobileMenu.addEventListener('click', function () {
+            var isClose = header.clientHeight === headerHeight
+            if (isClose) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = '46px'
+            }
+        })
+
+        // Tu dong dong khi chon menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (const menuItem of menuItems) {
+            menuItem.addEventListener('click', function () {
+                header.style.height = '46px'
+            })
+        }
+    </script>
 </body>
 </html>
