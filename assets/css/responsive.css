@@ -17,11 +17,46 @@
         display: none;
     }
 
+    #content .content-section {
+        overflow: hidden;
+    }
+
     #nav > li {
         display: block;
     }
 
     #header .mobile-menu-btn {
         display: block;
+    }
+
+    #slider .text-content {
+        display: none;
+    }
+
+    #content .content-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .member-list .text-center {
+        width: 100%;
+    }
+
+    .places-list .place {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    .contact-content .contact-info{
+        width: 414px;
+        margin-bottom: 16px;
+    }
+
+    .contact-content .contact-form {
+        width: 100%;
+    }
+
+    .contact-content .contact-form .info-personal {
+        width: 100%;
     }
 }
