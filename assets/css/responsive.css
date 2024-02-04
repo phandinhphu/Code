@@ -1,9 +1,9 @@
-/* Pc: width >= 1024px*/
+/* Pc: width >= 1024px */
 @media only screen and (min-width: 64em) {
     
 }
 
-/* Tablet & Mobile: width < 1024px*/
+/* Tablet & Mobile: width < 1024px */
 @media only screen and (max-width: 63.9375em) {
     .btn {
         padding: 15px 16px;
@@ -38,7 +38,7 @@
         padding-right: 16px;
     }
     
-    #nav .subnav  a{
+    #nav .subnav  a {
         padding: 5px 12px;
     }
 }
