@@ -3,16 +3,61 @@
     
 }
 
+/* Tablet & Mobile: width < 1024px*/
+@media only screen and (max-width: 63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+    
+    .socials-list {
+        font-size: 48px;
+    }
+    
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+    
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
 /* Tablet: width >=740px & width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em)  {
     #content .content-section {
         padding-left: 16px;
         padding-right: 16px;
     }
+    
+    #nav .subnav  a{
+        padding: 5px 12px;
+    }
 }
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
     #header .search-btn {
         display: none;
     }
@@ -21,8 +66,30 @@
         overflow: hidden;
     }
 
+    #nav {
+        display: block;
+    }
+
     #nav > li {
         display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
     }
 
     #header .mobile-menu-btn {
@@ -38,25 +105,20 @@
         padding-right: 16px;
     }
 
-    .member-list .text-center {
-        width: 100%;
+    #content .about-text {
+        text-align: center;
+        line-height: 1.4;
     }
 
-    .places-list .place {
-        width: 100%;
-        padding-top: 16px;
+    #content .member-list {
+        margin-top: 32px;
     }
 
-    .contact-content .contact-info{
-        width: 414px;
-        margin-bottom: 16px;
+    #content .member-img {
+        width: 60%;
     }
 
-    .contact-content .contact-form {
-        width: 100%;
-    }
-
-    .contact-content .contact-form .info-personal {
-        width: 100%;
+    .contact-form {
+        margin-top: 32px;
     }
 }

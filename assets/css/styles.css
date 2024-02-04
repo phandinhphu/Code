@@ -80,6 +80,10 @@ html {
     margin-top: 16px;
 }
 
+.mt-32 {
+    margin-top: 32px;
+}
+
 /* Main */
 
 #header {
@@ -90,7 +94,6 @@ html {
     height: 46px;
     background-color: black;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -153,6 +156,9 @@ html {
 
 #header .mobile-menu-btn {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #header .mobile-menu-btn,
@@ -291,7 +297,7 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -332,6 +338,14 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    opacity: 0.7;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
