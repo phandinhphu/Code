@@ -248,7 +248,7 @@
         var headerHeight = header.clientHeight;
         const mobileMenu = document.querySelector('.js-menu-btn')
 
-        // Dong mo mobile menu
+        // Đóng mở mobile menu
         mobileMenu.addEventListener('click', function () {
             var isClose = header.clientHeight === headerHeight
             if (isClose) {
@@ -258,7 +258,7 @@
             }
         })
 
-        // Tu dong dong khi chon menu
+        // Tự động đóng khi chọn menu
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
         for (const menuItem of menuItems) {
 
